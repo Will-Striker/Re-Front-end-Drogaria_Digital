@@ -1,0 +1,20 @@
+.jumbotron{
+    background-color:transparent !important;
+}
+
+.display-3.col-md-12{
+    text-align: center;
+}
+
+.card.col-md-4{
+    margin:2rem;
+    border:0px !important;
+}
+
+.card-text{
+    text-align: justify;
+}
+
+#redes-sociais{
+    text-align: center;
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="css/Sobre.css">
+
+    <!--Importação de Bootstrap-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Fim da importação de Bootstrap-->
+
+</head>
+
+<body class="home">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barra-geral">
+        <a class="navbar-brand" href="#">Logo do Site</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="registrar" data-toggle="modal"
+                        data-target="#modal-cadastrar">Registre-se</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="logar" data-toggle="modal" data-target="#modal-logar">Logar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="Sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Ajuda.html">Ajuda</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titulo-modal-cadastrar">Formulário de Cadastro</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div class="modal-body" id="corpo-modal-cadastrar">
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Nome</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome">
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Senha</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="inlineFormInputGroup"
+                                    placeholder="Senha">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                    <button class="btn btn-primary">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal-logar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titulo-modal-logar">Formulário de Cadastro</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div class="modal-body" id="corpo-modal-logar">
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Senha</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="inlineFormInputGroup"
+                                    placeholder="Senha">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                    <button class="btn btn-primary">Logar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Fim da modal Logar-->
+
+
+    <div class="jumbotron">
+        <!--Inicio do banner do Site-->
+
+        <h3 class="display-3 col-md-12" id="ala-desenvolvedor">Devs</h3>
+            <div class="container h-100">
+
+                
+                <div class="row h-100 justify-content-center align-items-center">
+
+        <div class="card col-md-4" style="width: 18rem;"> <!--Card de identificação de criador-->
+            <img src="img/Criadores/Criador-1.jpg" class="card-img-criador" alt="Criador do Front-End"> <!--Imagem do criador-->
+            <div class="card-body"> <!--Corpo do Card-->
+              <h5 class="card-title">William Wallace</h5><!--Nome do criador-->
+              <p class="card-text">Desenvolvedor de Front-End, responsavel por desenvolver este layout
+                  responsivo de base para outros projetos.
+              </p><!--Descrição do criador-->
+
+              
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="redes-sociais">Redes Sociais</li>
+                  <li class="list-group-item" id="redes-sociais">
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/Will_StrikerZ" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/william-wallace-rodrigues-425b62220/ role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Will-Striker" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </li>
+
+                </ul>
+              
+
+            </div>
+        </div>
+        
+
+        <div class="card col-md-4" style="width: 18rem;"> <!--Card de identificação de criador-->
+            <img src="img/Criadores/Criador-2.jpeg" class="card-img-criador" alt="Criador do Front-End"> <!--Imagem do criador-->
+            <div class="card-body"> <!--Corpo do Card-->
+              <h5 class="card-title">Matheus Verginio</h5><!--Nome do criador-->
+              <p class="card-text">Desenvolvedor de Back-End, responsavel por desenvolver as funcionalidades 
+                  deste sistema que será base para outros projetos.
+              </p><!--Descrição do criador-->
+
+              
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item" id="redes-sociais">Redes Sociais</li>
+                  <li class="list-group-item" id="redes-sociais">
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/UR4N0_235" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/matheus-fernandes-2a1595204" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/UR4N0-235" role="button"
+                        data-mdb-ripple-color="dark"><i class="fa fa-github" aria-hidden="true"></i></a>
+                  </li>
+
+                </ul>
+              
+
+            </div>
+        </div>
+
+        </p>
+                </div>
+            </div>
+    </div>
+    <!--Fim do banner do Site-->
+
+
+    <!--Inicio do Footer-->
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-6">
+            <!-- Section: Social media -->
+            <section class="mb-6">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/williamwallace.abreurodrigues/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/Will_StrikerZ" role="button"
+                    data-mdb-ripple-color="dark"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/in/william-wallace-rodrigues-425b62220/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/wiih.rodrigues/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/Will-Striker" role="button"
+                    data-mdb-ripple-color="dark"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+<!--Fim do footer-->
+
+</body>
+
+</html>
