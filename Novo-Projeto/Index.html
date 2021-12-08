@@ -36,10 +36,10 @@
 <body>
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="barra-geral">
+    <nav class="navbar navbar-expand-lg"  style="box-shadow: 0 0 0.1rem;" id="barra-geral">
         <!--Inicio da barra de navegação-->
         
-        <img src="img/Logo-Drogaria.png" alt="" class="navbar-brand" style="width: 170px;">
+        <img src="img/Logo-Drogaria.png" alt="" class="navbar-brand" style="width: 170px; margin-left: 4rem;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
             <span class="navbar-toggler-icon"></span>
@@ -58,10 +58,10 @@
                     <a class="nav-link" id="logar" data-toggle="modal" data-target="#modal-logar">Logar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Sobre.html">Sobre</a>
+                    <a class="nav-link text-dark" href="Sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Ajuda.html">Ajuda</a>
+                    <a class="nav-link text-dark" href="Ajuda.html">Ajuda</a>
                 </li>
             </ul>
         </div>
@@ -189,9 +189,13 @@
         Banner
         ===========================================-->
 
+<div class="de-tras" style="background-color:#ace2ff; box-shadow: 0 0 0.1rem;">
+
     <div class="container" id="banner">
-        <div class="row">
-                <div class="col-md-6 col-sm-12">
+        <div class="row" style="width: 80rem;">
+            
+                <div class="col-md-6 col-sm-12" style="padding-left: 15rem;">
+                    <div class="cor-fundo-card" style="background-color: white; margin-top: 7rem; padding: 1rem;">
                                 <h3>Medicamento</h3>
 
                                 <ul>
@@ -199,6 +203,7 @@
                                     <li>- Descrição</li>
                                     <li>- Descrição</li>
                                     <li>- Descrição</li>
+                                    
 
                                 </ul>
                                 <div class="botão">
@@ -206,13 +211,17 @@
                                     <button class="btn btn-secondary btn-light"><a class="btn-default btn" href="#">Compre agora!</a></button>
              
                                 </div>
-                </div>
+                
+                            </div>
+                
+                            </div>
                 <!--xv-slider-->
+                
             <div class="col-md-6 col-sm-12">
 
                 <div class="card-do-banner">                
-                <div class="card-de-produtos">  
-                    <div class="conteudo-card">
+                <div class="card-de-produtos" style="background-color: white;">  
+                    <div class="conteudo-card" style="margin-left:2rem; margin-top:1rem;">
                             <h4>Dipirona <br> Monoidratada</h4>
                             <span>R$2,50</span>
 
@@ -223,12 +232,13 @@
                         </div>
      
                         </div>
-                        <img src="img/produtos/dipirona.jpg" alt="" style="width: 210px">
+                        <img src="img/produtos/dipirona.jpg" alt="" style="width: 210px; margin-left: 3rem;">
                     </div>
                 </div>
                 <div class="card-do-banner">
+                    <div class="card-de-produtos" style="background-color: white;">  
                     <div class="card-de-produtos">
-                        <div class="conteudo-card">
+                        <div class="conteudo-card" style="margin-top:1rem;">
                             <h4>Paracetamol</h4>
                             <span>R$5,82</span>
                             <div class="botão">
@@ -239,6 +249,7 @@
                         </div>
                         <img src="img/paracetamol.jpg" alt="" style="width: 210px">
                     </div>
+                    </div>
                 </div>
             </div>
             <!--column-->
@@ -246,13 +257,12 @@
         <!--row-->
     </div>
     <!--container-->
-
+</div>
     <!--========================================
         Fim do Banner
         ===========================================-->
 
-
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-left">
         <div class="row content">
             <div class="col-sm-3 sidenav">
                 <div class="col-auto" id="pesquisar">
@@ -294,7 +304,7 @@
                                     <div class="card-body">
                                         <button href="#" class="btn-card" style="background-color:#dcfff8">Comprar</button>
 
-                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Dipirona" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"></i></button>
+                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Dipirona" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info" style="color:white"></i></button>
 
                                         <button href="#" class="btn-card" style="float:right; background-color:#ffdce3;"><i class="fa fa-cart-plus"></i></button>
 
@@ -319,7 +329,7 @@
                                     <div class="card-body">
                                         <button href="#" class="btn-card" style="background-color:#dcfff8">Comprar</button>
 
-                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Aspirina" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"></i></button>
+                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Aspirina" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"  style="color:white"></i></button>
 
                                         <button href="#" class="btn-card" style="float:right; background-color:#ffdce3;"><i class="fa fa-cart-plus"></i></button>
 
@@ -344,7 +354,7 @@
                                     <div class="card-body">
                                         <button href="#" class="btn-card" style="background-color:#dcfff8">Comprar</button>
 
-                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Loratadina" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"></i></button>
+                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Loratadina" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"  style="color:white"></i></button>
 
                                         <button href="#" class="btn-card" style="float:right; background-color:#ffdce3;"><i class="fa fa-cart-plus"></i></button>
 
@@ -369,7 +379,7 @@
                                     <div class="card-body">
                                         <button href="#" class="btn-card" style="background-color:#dcfff8">Comprar</button>
 
-                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Omeprazol" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"></i></button>
+                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Omeprazol" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info" style="color:white"></i></button>
 
                                         <button href="#" class="btn-card" style="float:right; background-color:#ffdce3;"><i class="fa fa-cart-plus"></i></button>
 
@@ -394,7 +404,7 @@
                                     <div class="card-body">
                                         <button href="#" class="btn-card" style="background-color:#dcfff8">Comprar</button>
 
-                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Dipirona" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"></i></button>
+                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Dipirona" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info" style="color:white"></i></button>
 
                                         <button href="#" class="btn-card" style="float:right; background-color:#ffdce3;"><i class="fa fa-cart-plus"></i></button>
 
@@ -419,7 +429,7 @@
                                     <div class="card-body">
                                         <button href="#" class="btn-card" style="background-color:#dcfff8">Comprar</button>
 
-                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Aspirina" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info"></i></button>
+                                        <button href="#" class="btn-card bg-dark" data-bs-toggle="popover" title="Aspirina" data-bs-content="Este medicamento é contra indicado quando na presença de ...." style="float:right; color:white; margin-left: 10px;"><i class="fa fa-info" style="color:white"></i></button>
 
                                         <button href="#" class="btn-card" style="float:right; background-color:#ffdce3;"><i class="fa fa-cart-plus"></i></button>
 
@@ -439,13 +449,16 @@
 </div>
 
 </div>
+</div>
+</div>
+    </div>
 
 
 
     <!--Fim do Conteúdo da Página-->
 
     <!--Inicio do Footer-->
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <footer class="text-center text-white" style="background-color: #f1f1f1; margin-top:2rem;">
         <!-- Grid container -->
         <div class="container pt-6">
             <!-- Section: Social media -->

@@ -1,5 +1,5 @@
-.navbar.navbar-expand-lg.navbar-light.bg-light{
-    background-color:#f1f1f1 !important;
+.navbar.navbar-expand-lg{
+    background-color:white !important;
 }
 
 #logar{
@@ -10,16 +10,14 @@
     cursor: pointer;
 }
 
+p{
+    margin-left: 1rem;
+}
 
 #container-fluid-title{
     text-align: center  !important;
 }
 
-#banner{
-    margin: 2rem !important;
-    padding: 2rem !important;
-
-}
 
 .card-de-produtos{
     display: flex;
@@ -29,8 +27,11 @@
 }
 
 #banner{
-    margin-left: 6rem !important;
+    margin:0px !important;
+    background-color: #ace2ff;
+    width: 100%;
 }
+
 
 .card-do-banner{
     margin: 1rem;
@@ -71,6 +72,8 @@ margin-right: 2rem;;
         margin-top:2rem;
 
     }
+
+
 
     /*Cards*/
 
