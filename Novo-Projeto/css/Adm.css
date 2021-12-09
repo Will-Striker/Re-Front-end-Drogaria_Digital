@@ -1,0 +1,36 @@
+.jumbotron{
+    margin:0px !important;
+    background-color: #ace2ff !important;
+    width: 100%;
+    display: flex;
+}
+
+.display-3.col-md-12{
+    text-align: center;
+}
+
+.card.col-md-4{
+    margin:2rem;
+    border:0px !important;
+}
+
+.card-text{
+    text-align: start;
+}
+
+.col-auto{
+    border: 0px !important;
+}
+
+#banner{
+    background-color: #ace2ff !important;
+}
+
+.nav-link{
+    color:black;
+}
+
+.lista-pedidos{
+    border: 0px;
+    background-color: transparent !important;
+}
