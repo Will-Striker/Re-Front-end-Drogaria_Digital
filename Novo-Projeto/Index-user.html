@@ -30,7 +30,6 @@
 
     <!--Fim da importação de Bootstrap-->
 
-    
 
 </head>
 
@@ -56,15 +55,18 @@
                 <li class="nav-item active">
                     <a class="nav-link disabled" href="Index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="registrar" data-toggle="modal"
-                        data-target="#modal-cadastrar">Registre-se</a>
+                <li>
+                    <div class="dropdown show">
+                        <a class="nav-link btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuário Logado</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" data-toggle="modal" data-target="#modal-meus-dados" id="config-user">Meus dados</a>
+                        <a class="dropdown-item" href="#">Segurança</a>
+                        <a class="dropdown-item" href="Index.html">Sair</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="logar" data-toggle="modal" data-target="#modal-logar">Logar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="Sobre.html">Sobre</a>
+                    <a class="nav-link text-dark" href="Sobre-user.html">Sobre nós</a>
                 </li>
 
             </ul>
@@ -75,14 +77,12 @@
 
 
 
-
-    <!--inicio da modal cadastrar-->
-    <div class="modal fade" id="modal-cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    <div class="modal fade" id="modal-meus-dados" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="titulo-modal-cadastrar">Formulário de Cadastro</h5>
+                    <h5 class="modal-title" id="titulo-modal-cadastrar">Meus Dados</h5>
                     <button class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -98,7 +98,104 @@
                                 <div class="input-group-prepend">
                                     <div class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></div>
                                 </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome" disabled>
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">CPF</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="CPF" disabled>
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">CPF</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Cep" disabled>
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Email</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email" disabled>
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Senha</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-tag" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="password" class="form-control" id="inlineFormInputGroup"
+                                    placeholder="Senha" disabled>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#modal-alterar-meus-dados">Alterar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-alterar-meus-dados" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titulo-modal-alterar-meus-dados">Meus Dados</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div class="modal-body" id="corpo-modal-alterar-meus-dados">
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Nome</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                </div>
                                 <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome">
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">CPF</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="CPF">
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">CPF</label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text"><i class="fa fa-location-arrow" aria-hidden="true"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Cep">
                             </div>
                         </div>
 
@@ -128,63 +225,13 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                    <button class="btn btn-primary">Cadastrar</button>
+                    <button class="btn btn-primary">Confirmar</button>
                 </div>
             </div>
         </div>
     </div>
-    <!--Fim da modal cadastrar-->
 
-    <!--Inicio da modal Logar-->
-    <div class="modal fade" id="modal-logar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="titulo-modal-logar">Formulário de Login</h5>
-                    <button class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
 
-                <div class="container-fluid">
-
-                    <div class="modal-body" id="corpo-modal-logar">
-
-                        <div class="col-auto">
-                            <label class="sr-only" for="inlineFormInputGroup">Email</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Email"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="col-auto">
-                            <label class="sr-only" for="inlineFormInputGroup">Senha</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-tag" aria-hidden="true"></i></div>
-                                </div>
-                                <input type="password" class="form-control" id="inlineFormInputGroup"
-                                    placeholder="Senha" required>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                    <button class="btn btn-primary" type="submit">Logar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Fim da modal Logar-->
 
     <!--Conteúdo da Página-->
 
@@ -272,7 +319,7 @@
                 <div class="col-auto" id="pesquisar">
                     <div class="input-group mb-2">
                         <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></div>
+                            <div class="input-group-text" style="background-color: #ace2ff; border:#ace2ff;"><i class="fa fa-search" style="color:whitesmoke" aria-hidden="true"></i></div>
                         </div>
                         <input type="text" class="form-control" placeholder="Pesquisar...">
                     </div>
@@ -448,7 +495,7 @@
 
 <div class="button-next-page text-center">
 
-    <a class="btn btn-secondary" href="Produtos.html">Ver Mais</a>
+    <a class="btn btn-secondary" id="btn-ver-mais" href="Produtos-user.html">Ver Mais</a>
 
 </div>
 
@@ -461,7 +508,6 @@
 
     <!--Fim do Conteúdo da Página-->
 
-    <!--Inicio do Footer-->
     <footer class="bg-dark text-left text-lg-start" id="footer">
         <!-- Grid container -->
         <div class="container p-4">
@@ -544,7 +590,6 @@
         </div>
         <!-- Copyright -->
       </footer>
-    <!--Fim do footer-->
 
 </body>
 
